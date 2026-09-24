@@ -19,6 +19,7 @@ export const Input = forwardRef(({ label, error, hint, className, ...props }, re
     </div>
   );
 });
+Input.displayName = 'Input';
 
 export const Textarea = forwardRef(({ label, error, hint, className, ...props }, ref) => {
   const id = props.id || props.name;
@@ -38,6 +39,7 @@ export const Textarea = forwardRef(({ label, error, hint, className, ...props },
     </div>
   );
 });
+Textarea.displayName = 'Textarea';
 
 export const Select = forwardRef(({ label, error, hint, className, children, ...props }, ref) => {
   const id = props.id || props.name;
@@ -59,3 +61,4 @@ export const Select = forwardRef(({ label, error, hint, className, children, ...
     </div>
   );
 });
+Select.displayName = 'Select';
