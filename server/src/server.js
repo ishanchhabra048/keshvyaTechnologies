@@ -5,8 +5,9 @@ import mongoose from 'mongoose';
 
 const start = async () => {
   await connectDB();
-  const server = app.listen(env.PORT, () => {
-    console.log(`Server listening on port ${env.PORT}`);
+  const port = process.env.PORT || env.PORT || 5000;
+  const server = app.listen(port, '0.0.0.0', () => {
+    console.log(`Server listening on 0.0.0.0:${port}`);
   });
 
   const shutdown = () => {
