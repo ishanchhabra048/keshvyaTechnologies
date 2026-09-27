@@ -7,7 +7,7 @@ dotenv.config();
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
   PORT: z.coerce.number().default(5000),
-  MONGODB_URI: z.string().url().or(z.string().startsWith('mongodb')),
+  MONGODB_URI: z.string().url().or(z.string().startsWith('mongodb')).default('mongodb://localhost:27017/agency'),
   JWT_SECRET: z.string().min(32).default('fallback_secret_for_development_must_be_32_chars'),
   JWT_EXPIRES_IN: z.string().default('1d'),
   CLIENT_ORIGINS: z.string().transform(str => str.split(',')).default('http://localhost:5173'),

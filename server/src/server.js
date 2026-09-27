@@ -1,12 +1,26 @@
-import express from 'express';
+import app from './app.js';
+import { env } from './config/env.js';
+import { connectDB } from './config/db.js';
+import mongoose from 'mongoose';
 
-const app = express();
-const port = process.env.PORT || 5000;
+const start = async () => {
+  await connectDB();
+  const server = app.listen(env.PORT, () => {
+    console.log(`Server listening on port ${env.PORT}`);
+  });
 
-app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
+  const shutdown = () => {
+    server.close(() => {
+      mongoose.connection.close(false);
+      console.log('Server closed');
+      process.exit(0);
+    });
+  };
 
-if (process.env.NODE_ENV !== 'test') {
-  app.listen(port, () => console.log(`Server listening on port ${port}`));
+  process.on('SIGTERM', shutdown);
+  process.on('SIGINT', shutdown);
+};
+
+if (env.NODE_ENV !== 'test') {
+  start();
 }
-
-export default app;
