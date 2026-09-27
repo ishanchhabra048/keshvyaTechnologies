@@ -20,6 +20,7 @@ export const Input = forwardRef(({ label, error, hint, className, ...props }, re
   );
 });
 Input.displayName = 'Input';
+export default Input;
 
 export const Textarea = forwardRef(({ label, error, hint, className, ...props }, ref) => {
   const id = props.id || props.name;

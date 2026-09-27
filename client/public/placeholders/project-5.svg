@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <rect width="1200" height="750" rx="16" fill="#0D0D14"/>
+  <rect x="0" y="0" width="1200" height="48" rx="16" fill="#12121B"/>
+  <circle cx="28" cy="24" r="6" fill="#F87171" opacity="0.8"/>
+  <circle cx="48" cy="24" r="6" fill="#FBBF24" opacity="0.8"/>
+  <circle cx="68" cy="24" r="6" fill="#34D399" opacity="0.8"/>
+
+  <!-- Architectural Gallery Mockup -->
+  <rect x="80" y="80" width="400" height="580" rx="12" fill="#181824" stroke="rgba(255,255,255,0.06)"/>
+  <circle cx="280" cy="280" r="100" fill="#22D3EE" opacity="0.1"/>
+  <rect x="120" y="520" width="260" height="24" rx="4" fill="#F5F5F7"/>
+  <rect x="120" y="560" width="160" height="16" rx="4" fill="#6B6B80"/>
+
+  <rect x="510" y="80" width="610" height="270" rx="12" fill="#181824" stroke="rgba(255,255,255,0.06)"/>
+  <circle cx="815" cy="215" r="70" fill="#7C5CFF" opacity="0.15"/>
+  <rect x="550" y="270" width="220" height="24" rx="4" fill="#F5F5F7"/>
+
+  <rect x="510" y="380" width="610" height="280" rx="12" fill="#181824" stroke="rgba(124,92,255,0.2)"/>
+  <circle cx="815" cy="520" r="80" fill="#F472B6" opacity="0.1"/>
+  <rect x="550" y="570" width="280" height="24" rx="4" fill="#F5F5F7"/>
+</svg>

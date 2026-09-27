@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <rect width="1200" height="750" rx="16" fill="#07070B"/>
+  <!-- Top Bar -->
+  <rect x="0" y="0" width="1200" height="48" rx="16" fill="#0D0D14"/>
+  <circle cx="28" cy="24" r="6" fill="#F87171" opacity="0.8"/>
+  <circle cx="48" cy="24" r="6" fill="#FBBF24" opacity="0.8"/>
+  <circle cx="68" cy="24" r="6" fill="#34D399" opacity="0.8"/>
+  
+  <!-- Sidebar -->
+  <rect x="0" y="48" width="220" height="702" fill="#0D0D14"/>
+  <rect x="24" y="80" width="172" height="32" rx="8" fill="#181824"/>
+  <rect x="24" y="130" width="172" height="28" rx="6" fill="#12121B"/>
+  <rect x="24" y="170" width="172" height="28" rx="6" fill="#12121B"/>
+  <rect x="24" y="210" width="172" height="28" rx="6" fill="#12121B"/>
+
+  <!-- Analytics & Chart Blocks -->
+  <rect x="250" y="70" width="280" height="140" rx="12" fill="#12121B" stroke="rgba(255,255,255,0.06)"/>
+  <rect x="550" y="70" width="280" height="140" rx="12" fill="#12121B" stroke="rgba(255,255,255,0.06)"/>
+  <rect x="850" y="70" width="310" height="140" rx="12" fill="#12121B" stroke="rgba(124,92,255,0.3)"/>
+  
+  <path d="M 270 170 Q 340 120 410 150 T 500 110" stroke="#22D3EE" stroke-width="4" fill="none"/>
+  <path d="M 570 170 Q 640 140 710 160 T 800 120" stroke="#7C5CFF" stroke-width="4" fill="none"/>
+  
+  <!-- Big Telemetry Chart -->
+  <rect x="250" y="240" width="910" height="460" rx="16" fill="#12121B" stroke="rgba(255,255,255,0.06)"/>
+  <path d="M 280 580 C 380 500, 460 620, 580 440 C 700 260, 800 500, 940 360 C 1040 240, 1100 320, 1130 280" stroke="url(#p2-chart-grad)" stroke-width="5" fill="none"/>
+  
+  <defs>
+    <linearGradient id="p2-chart-grad" x1="280" y1="280" x2="1130" y2="580" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.5" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+  </defs>
+</svg>

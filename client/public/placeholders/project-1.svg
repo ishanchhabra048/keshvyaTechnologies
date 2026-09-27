@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <rect width="1200" height="750" rx="16" fill="#0D0D14"/>
+  <!-- Window Controls -->
+  <rect x="0" y="0" width="1200" height="48" rx="16" fill="#12121B"/>
+  <circle cx="28" cy="24" r="6" fill="#F87171" opacity="0.8"/>
+  <circle cx="48" cy="24" r="6" fill="#FBBF24" opacity="0.8"/>
+  <circle cx="68" cy="24" r="6" fill="#34D399" opacity="0.8"/>
+  <rect x="120" y="14" width="400" height="20" rx="6" fill="#181824"/>
+  
+  <!-- Content Area -->
+  <rect x="48" y="80" width="300" height="40" rx="8" fill="url(#p1-grad)"/>
+  <rect x="48" y="140" width="480" height="16" rx="4" fill="#6B6B80" opacity="0.5"/>
+  <rect x="48" y="168" width="380" height="16" rx="4" fill="#6B6B80" opacity="0.3"/>
+  <rect x="48" y="210" width="160" height="44" rx="10" fill="url(#p1-grad)"/>
+
+  <!-- E-commerce Grid -->
+  <rect x="600" y="80" width="550" height="600" rx="16" fill="#12121B" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="630" y="110" width="220" height="260" rx="12" fill="#181824"/>
+  <rect x="880" y="110" width="240" height="260" rx="12" fill="#181824"/>
+  <circle cx="740" cy="220" r="48" fill="#7C5CFF" opacity="0.2"/>
+  <circle cx="1000" cy="220" r="48" fill="#22D3EE" opacity="0.2"/>
+  
+  <rect x="630" y="400" width="490" height="120" rx="12" fill="#181824" stroke="rgba(124,92,255,0.3)"/>
+  <rect x="660" y="430" width="180" height="24" rx="6" fill="#F5F5F7" opacity="0.9"/>
+  <rect x="660" y="468" width="120" height="18" rx="4" fill="#22D3EE"/>
+  
+  <defs>
+    <linearGradient id="p1-grad" x1="0" y1="0" x2="300" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <rect width="1200" height="750" rx="16" fill="#07070B"/>
+  <rect x="0" y="0" width="1200" height="48" rx="16" fill="#0D0D14"/>
+  <circle cx="28" cy="24" r="6" fill="#F87171" opacity="0.8"/>
+  <circle cx="48" cy="24" r="6" fill="#FBBF24" opacity="0.8"/>
+  <circle cx="68" cy="24" r="6" fill="#34D399" opacity="0.8"/>
+
+  <!-- Futuristic Dev Terminal & Orbit 3D mockup -->
+  <rect x="100" y="100" width="1000" height="560" rx="16" fill="#12121B" stroke="rgba(124,92,255,0.4)"/>
+  <circle cx="600" cy="380" r="160" stroke="url(#p6-orbit-grad)" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+  <circle cx="600" cy="380" r="80" fill="#7C5CFF" opacity="0.2"/>
+  <circle cx="600" cy="380" r="30" fill="#22D3EE"/>
+  
+  <rect x="140" y="140" width="280" height="32" rx="6" fill="url(#p6-orbit-grad)"/>
+  <rect x="140" y="190" width="400" height="14" rx="4" fill="#A1A1B5"/>
+  <rect x="140" y="215" width="340" height="14" rx="4" fill="#A1A1B5"/>
+
+  <!-- Code Snippet Window -->
+  <rect x="700" y="150" width="360" height="240" rx="10" fill="#0D0D14" stroke="rgba(255,255,255,0.06)"/>
+  <rect x="730" y="180" width="120" height="12" rx="3" fill="#F472B6"/>
+  <rect x="730" y="205" width="220" height="12" rx="3" fill="#22D3EE"/>
+  <rect x="730" y="230" width="180" height="12" rx="3" fill="#7C5CFF"/>
+  <rect x="730" y="255" width="260" height="12" rx="3" fill="#34D399"/>
+  <rect x="730" y="280" width="140" height="12" rx="3" fill="#FBBF24"/>
+
+  <defs>
+    <linearGradient id="p6-orbit-grad" x1="100" y1="100" x2="1100" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C5CFF"/>
+      <stop offset="0.5" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+  </defs>
+</svg>
