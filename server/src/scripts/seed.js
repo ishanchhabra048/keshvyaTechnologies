@@ -240,17 +240,18 @@ The launch campaign captured over 25,000 developer waitlist signups in the first
 export const runSeed = async () => {
   await connectDB();
   
-  const count = await Project.countDocuments();
-  if (count === 0) {
-    await Project.insertMany(seedProjects);
-    console.log('Inserted 6 seed projects.');
-  } else if (env.NODE_ENV !== 'production') {
-    await Project.deleteMany({});
-    await Project.insertMany(seedProjects);
-    console.log('Re-inserted 6 seed projects in dev.');
-  } else {
-    console.log('Production DB has projects, skipping project seed.');
+  // Upsert all seed projects by slug
+  for (const proj of seedProjects) {
+    await Project.findOneAndUpdate(
+      { slug: proj.slug },
+      { $set: proj },
+      { upsert: true, new: true }
+    );
   }
+  // Remove any obsolete projects that are not in seedProjects
+  const activeSlugs = seedProjects.map(p => p.slug);
+  await Project.deleteMany({ slug: { $nin: activeSlugs } });
+  console.log(`Synced ${seedProjects.length} projects in MongoDB successfully.`);
 
   const adminEmail = (env.ADMIN_EMAIL || 'admin@example.com').toLowerCase();
   const adminPassword = env.ADMIN_PASSWORD || 'supersecurepassword123';
