@@ -40,24 +40,23 @@ Successfully deployed on the company's official website for production use, acce
     },
     status: 'published',
     publishedAt: new Date('2026-03-15T10:00:00Z'),
-    coverImage: { url: '/placeholders/project-1.svg', publicId: 'p1', alt: 'AnyFeast Nutritionist Portal & Seminar Platform' },
+    coverImage: { url: '/projects/anyfeast.png', publicId: 'anyfeast-cover', alt: 'AnyFeast Live Nutrition Sessions & Dietitian Platform' },
     gallery: [
-      { url: '/placeholders/project-1.svg', publicId: 'p1-1', alt: 'Nutritionist Dashboard & Consultation Manager' },
-      { url: '/placeholders/project-2.svg', publicId: 'p1-2', alt: '7-Day Meal Plan PDF Generator' }
+      { url: '/projects/anyfeast.png', publicId: 'anyfeast-1', alt: 'AnyFeast Live Nutrition Sessions' }
     ]
   },
   {
-    title: 'Food Delivery Backend REST API',
+    title: 'Tiffino - Food Delivery & Kitchens Platform',
     slug: 'food-delivery-backend',
     category: 'web-app',
     featured: true,
     order: 2,
     industry: 'Food & Beverage / Logistics',
-    clientName: 'Food Delivery Platform',
+    clientName: 'Tiffino Fresh & Fast',
     year: 2026,
     liveUrl: 'https://food-delivery-backend-lake-seven.vercel.app/',
     techStack: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'REST APIs', 'RBAC', 'Mongoose'],
-    summary: 'High-performance modular REST API backend featuring dual-token JWT authentication, restaurant catalogs, dynamic cart mutations, and atomic checkout workflows.',
+    summary: 'Curated dining and artisan tiffins food delivery platform with modular REST API, multi-cuisine filtering, and real-time order tracking.',
     description: `### The Challenge
 Modern food delivery platforms require resilient, low-latency API architectures capable of handling multi-tenant restaurant catalogs, dynamic cart mutations, strict authorization policies, and atomic order consistency checks.
 
@@ -81,10 +80,9 @@ Delivered sub-50ms API response times across core endpoints and 100% data integr
     },
     status: 'published',
     publishedAt: new Date('2026-02-10T12:00:00Z'),
-    coverImage: { url: '/placeholders/project-2.svg', publicId: 'p2', alt: 'Food Delivery API Architecture' },
+    coverImage: { url: '/projects/tiffino-food-delivery.png', publicId: 'tiffino-cover', alt: 'Tiffino Food Delivery & Kitchens Platform UI' },
     gallery: [
-      { url: '/placeholders/project-2.svg', publicId: 'p2-1', alt: 'Modular REST API Structure' },
-      { url: '/placeholders/project-3.svg', publicId: 'p2-2', alt: 'Order Validation Flow' }
+      { url: '/projects/tiffino-food-delivery.png', publicId: 'tiffino-1', alt: 'Explore Kitchens & Restaurants UI' }
     ]
   },
   {
