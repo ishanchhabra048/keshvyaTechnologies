@@ -2,9 +2,9 @@ export const brand = {
   name: 'Keshvya Technologies',
   tagline: 'Websites that make brands unforgettable',
   url: 'https://keshvya-technologies.vercel.app',
-  email: 'contact.keshvya@gmail.com',
-  phone: '+91 98765 43210',
-  city: 'New Delhi, India',
+  email: 'ishanchhabra048@gmail.com',
+  phone: '+91 81718 19054',
+  city: 'Ghaziabad, NCR, India',
   founded: 2021,
   teamSize: 8,
 };

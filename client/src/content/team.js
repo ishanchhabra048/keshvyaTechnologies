@@ -1,13 +1,13 @@
 export const team = [
   {
-    name: 'Alexander Cross',
-    role: 'Founder & Lead Engineer',
-    initials: 'AC',
-    bio: 'Full-stack architect with 10+ years specializing in high-performance React web applications and scalable distributed backends.',
+    name: 'Ishan Chhabra',
+    role: 'Founder & Full Stack Engineer',
+    initials: 'IC',
+    bio: 'Full Stack Developer with hands-on experience building production React/Next.js and Node.js/PostgreSQL applications, AI-integrated workflows, and scalable REST backends.',
     socials: [
-      { name: 'GitHub', href: 'https://github.com' },
+      { name: 'GitHub', href: 'https://github.com/ishanchhabra048' },
       { name: 'LinkedIn', href: 'https://linkedin.com' },
-      { name: 'X', href: 'https://x.com' }
+      { name: 'Email', href: 'mailto:ishanchhabra048@gmail.com' }
     ]
   },
   {

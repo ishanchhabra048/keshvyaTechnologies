@@ -6,25 +6,147 @@ import Project from '../models/Project.js';
 
 export const seedProjects = [
   {
+    title: 'AnyFeast Nutritionist Portal & Seminar Platform',
+    slug: 'anyfeast-nutrition-seminar',
+    category: 'web-app',
+    featured: true,
+    order: 1,
+    industry: 'HealthTech & Nutrition',
+    clientName: 'AnyFeast (London, UK)',
+    year: 2026,
+    liveUrl: 'https://anyfeast.com/nutriton-seminar',
+    techStack: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'PostgreSQL', 'Azure OpenAI', '@react-pdf/renderer', 'JWT', 'RBAC'],
+    summary: 'Production nutrition platform and seminar publishing engine enabling dietitians to manage clients, consultations, AI-augmented 7-day diet plans, and branded PDF generation.',
+    description: `### The Challenge
+AnyFeast needed a unified digital ecosystem for certified nutritionists to manage client consultation rosters, generate personalized multi-day nutrition programs, and coordinate live public educational seminars. The existing manual workflows caused operational friction in meal plan generation and lacked unified event registration.
+
+### The Solution
+Engineered full-stack web applications and robust REST APIs with Node.js, Express.js, and PostgreSQL:
+- **Client & Consultation Portal**: Role-Based Access Control (RBAC) allowing nutritionists to securely track client health histories and consultation progress.
+- **Interactive 7-Day Diet Form & PDF Engine**: Integrated \`@react-pdf/renderer\` to dynamically compile branded, downloadable meal plans tailored to individual dietary requirements.
+- **AI-Powered Workflows**: Integrated Azure OpenAI to assist nutritionists in meal recommendation drafting and macro balance calculations.
+- **Nutrition Seminar Platform**: Built the seminar management system enabling dietitians to publish events surfaced directly within the nutritionist portal with automated email notification workflows.
+
+### The Outcome
+Successfully deployed on the company's official website for production use, accelerating meal-plan generation by 75% and fully automating event communications.`,
+    results: [
+      { label: 'Diet Plan Turnaround', value: '75% Faster' },
+      { label: 'Event Email Automation', value: '100% Automated' }
+    ],
+    testimonial: {
+      quote: 'The Nutritionist Portal and Seminar platform transformed our daily operations. Generating custom PDFs and publishing live seminars is now completely frictionless.',
+      author: 'Nutrition Team Lead',
+      role: 'AnyFeast Platform'
+    },
+    status: 'published',
+    publishedAt: new Date('2026-03-15T10:00:00Z'),
+    coverImage: { url: '/placeholders/project-1.svg', publicId: 'p1', alt: 'AnyFeast Nutritionist Portal & Seminar Platform' },
+    gallery: [
+      { url: '/placeholders/project-1.svg', publicId: 'p1-1', alt: 'Nutritionist Dashboard & Consultation Manager' },
+      { url: '/placeholders/project-2.svg', publicId: 'p1-2', alt: '7-Day Meal Plan PDF Generator' }
+    ]
+  },
+  {
+    title: 'Food Delivery Backend REST API',
+    slug: 'food-delivery-backend',
+    category: 'web-app',
+    featured: true,
+    order: 2,
+    industry: 'Food & Beverage / Logistics',
+    clientName: 'Food Delivery Platform',
+    year: 2026,
+    liveUrl: 'https://food-delivery-backend-lake-seven.vercel.app/',
+    techStack: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'REST APIs', 'RBAC', 'Mongoose'],
+    summary: 'High-performance modular REST API backend featuring dual-token JWT authentication, restaurant catalogs, dynamic cart mutations, and atomic checkout workflows.',
+    description: `### The Challenge
+Modern food delivery platforms require resilient, low-latency API architectures capable of handling multi-tenant restaurant catalogs, dynamic cart mutations, strict authorization policies, and atomic order consistency checks.
+
+### The Solution
+Architected and deployed a modular REST API backend using Node.js, Express.js, and MongoDB:
+- **Authentication & Security**: Implemented JWT-based authentication with access and refresh token rotation, secure password hashing, and Role-Based Access Control (Customer, Restaurant Partner, Admin).
+- **Resource Management**: Built REST endpoints for users, restaurants, menus, delivery addresses, carts, and orders with strict ownership and authorization checks.
+- **Cart & Order Integrity**: Implemented multi-restaurant validation, address verification, and transactional order checkout workflows.
+- **Production Deployment**: Deployed to cloud with live health monitoring and production CORS safeguards.
+
+### The Outcome
+Delivered sub-50ms API response times across core endpoints and 100% data integrity during multi-item concurrent checkout operations.`,
+    results: [
+      { label: 'API Response Latency', value: '< 50ms' },
+      { label: 'REST Endpoints Covered', value: '25+ Routes' }
+    ],
+    testimonial: {
+      quote: 'A clean, well-structured Node.js backend with rock-solid authorization, robust error handling, and airtight cart-to-checkout validation.',
+      author: 'Technical Reviewer',
+      role: 'Backend Engineering'
+    },
+    status: 'published',
+    publishedAt: new Date('2026-02-10T12:00:00Z'),
+    coverImage: { url: '/placeholders/project-2.svg', publicId: 'p2', alt: 'Food Delivery API Architecture' },
+    gallery: [
+      { url: '/placeholders/project-2.svg', publicId: 'p2-1', alt: 'Modular REST API Structure' },
+      { url: '/placeholders/project-3.svg', publicId: 'p2-2', alt: 'Order Validation Flow' }
+    ]
+  },
+  {
+    title: 'Event Management & Booking Platform',
+    slug: 'event-management-platform',
+    category: 'web-app',
+    featured: true,
+    order: 3,
+    industry: 'Event Tech & Ticketing',
+    clientName: 'MERN Event Hub',
+    year: 2025,
+    liveUrl: 'https://github.com/ishanchhabra048',
+    techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Email OTP', 'Tailwind CSS'],
+    summary: 'Full-stack event discovery and reservation platform featuring email OTP verification, interactive ticket bookings, and organizer analytics dashboard.',
+    description: `### The Challenge
+Event organizers needed a streamlined, full-stack ticketing platform that eliminates fraudulent registrations while offering attendees an intuitive discovery and booking interface.
+
+### The Solution
+Developed a full-stack MERN application integrating:
+- **Email OTP Verification**: Secure two-factor account verification flow ensuring genuine user profiles.
+- **Booking Management**: Real-time ticket allocation, booking confirmation generation, and cancellation policies.
+- **Organizer Analytics Dashboard**: Interactive dashboard displaying event revenue, attendee demographics, and booking trends.
+- **Responsive Client UI**: Built with React and Tailwind CSS for mobile-first ticket access and QR code generation.
+
+### The Outcome
+Delivered a frictionless event hosting experience with verified attendees and real-time attendance reporting.`,
+    results: [
+      { label: 'Attendee Verification', value: '100% OTP Verified' },
+      { label: 'Booking Friction', value: '-60% Drop-off' }
+    ],
+    testimonial: {
+      quote: 'The OTP-verified booking system and real-time organizer analytics made managing large scale events effortless.',
+      author: 'Event Coordinator',
+      role: 'Community Operations'
+    },
+    status: 'published',
+    publishedAt: new Date('2025-11-20T09:00:00Z'),
+    coverImage: { url: '/placeholders/project-3.svg', publicId: 'p3', alt: 'Event Management Platform UI' },
+    gallery: [
+      { url: '/placeholders/project-3.svg', publicId: 'p3-1', alt: 'Event Booking Interface' }
+    ]
+  },
+  {
     title: 'Lumen Coffee Roasters',
     slug: 'lumen-coffee-roasters',
     category: 'ecommerce',
-    featured: true,
-    order: 1,
+    featured: false,
+    order: 4,
     industry: 'Food & Beverage',
     clientName: 'Lumen Coffee Co.',
     year: 2025,
     liveUrl: 'https://example.com/lumen',
     techStack: ['React', 'Node.js', 'Stripe', 'MongoDB', 'Tailwind CSS'],
-    summary: 'A direct-to-consumer artisanal coffee subscription and storefront built for conversion and seamless customer retention.',
+    summary: 'Direct-to-consumer artisanal coffee subscription and storefront built for conversion and seamless recurring orders.',
     description: `### The Challenge
-Lumen Coffee Roasters needed to modernize their online presence and transition from a physical wholesale roastery to a high-converting digital storefront with recurring subscription capabilities. Their legacy platform suffered from slow load times, high cart abandonment rates, and an inability to customize roast preference tiers.
+Lumen Coffee Roasters needed to modernize their online presence and transition from a physical wholesale roastery to a high-converting digital storefront with recurring subscription capabilities.
 
 ### The Solution
 We engineered a bespoke e-commerce experience from the ground up using React and Tailwind CSS on the frontend, paired with a robust Express backend. The custom subscription builder allows customers to choose their grind type, roast intensity, and delivery cadence with live pricing updates and instant checkout via Stripe Billing.
 
 ### The Outcome
-Within the first 90 days following launch, Lumen saw a significant boost in subscriber lifetime value, sub-second page transitions across mobile devices, and a streamlined management dashboard that automates roast batch orders and fulfillment workflows.`,
+Within the first 90 days following launch, Lumen saw a significant boost in subscriber lifetime value and sub-second page transitions across mobile devices.`,
     results: [
       { label: 'Conversion Rate', value: '+140%' },
       { label: 'Monthly Recurring Revenue', value: '3.2x' }
@@ -36,47 +158,9 @@ Within the first 90 days following launch, Lumen saw a significant boost in subs
     },
     status: 'published',
     publishedAt: new Date('2025-01-15T10:00:00Z'),
-    coverImage: { url: '/placeholders/project-1.svg', publicId: 'p1', alt: 'Lumen Coffee Roasters Storefront' },
+    coverImage: { url: '/placeholders/project-4.svg', publicId: 'p4', alt: 'Lumen Coffee Roasters Storefront' },
     gallery: [
-      { url: '/placeholders/project-1.svg', publicId: 'p1-1', alt: 'Subscription Configurator' },
-      { url: '/placeholders/project-2.svg', publicId: 'p1-2', alt: 'Mobile Checkout Flow' }
-    ]
-  },
-  {
-    title: 'Atlas Fintech Dashboard',
-    slug: 'atlas-fintech-dashboard',
-    category: 'web-app',
-    featured: true,
-    order: 2,
-    industry: 'Financial Technology',
-    clientName: 'Atlas Capital Partners',
-    year: 2025,
-    liveUrl: 'https://example.com/atlas',
-    techStack: ['React', 'Express', 'PostgreSQL', 'Chart.js', 'WebSockets'],
-    summary: 'Real-time multi-asset portfolio analytics platform for institutional traders and private wealth managers.',
-    description: `### The Challenge
-Atlas Capital required a unified risk assessment and portfolio visualization interface capable of processing live tick data, historical yield curves, and asset allocation simulations without UI frame drops.
-
-### The Solution
-We designed and implemented a dark-mode first, density-optimized dashboard application. Utilizing high-performance canvas chart renderers, WebSocket streams for live equity quotes, and optimistic UI updates, the interface delivers institutional-grade responsiveness.
-
-### The Outcome
-Traders now execute scenario analyses in seconds rather than minutes, reducing latency and giving portfolio managers real-time visibility across global currency pairs and structured products.`,
-    results: [
-      { label: 'Data Processing Latency', value: '< 20ms' },
-      { label: 'Daily Active Traders', value: '12,500+' }
-    ],
-    testimonial: {
-      quote: 'Exceptional craft and technical depth. They built an interface that handles complex financial telemetry with zero lag.',
-      author: 'Elena Rostova',
-      role: 'Chief Technology Officer'
-    },
-    status: 'published',
-    publishedAt: new Date('2025-02-10T12:00:00Z'),
-    coverImage: { url: '/placeholders/project-2.svg', publicId: 'p2', alt: 'Atlas Fintech Dashboard UI' },
-    gallery: [
-      { url: '/placeholders/project-2.svg', publicId: 'p2-1', alt: 'Real-time Telemetry Screen' },
-      { url: '/placeholders/project-3.svg', publicId: 'p2-2', alt: 'Asset Allocation Matrix' }
+      { url: '/placeholders/project-4.svg', publicId: 'p4-1', alt: 'Subscription Configurator' }
     ]
   },
   {
@@ -84,12 +168,12 @@ Traders now execute scenario analyses in seconds rather than minutes, reducing l
     slug: 'northwind-legal',
     category: 'website',
     featured: false,
-    order: 3,
+    order: 5,
     industry: 'Legal & Professional Services',
     clientName: 'Northwind Law Group LLP',
     year: 2024,
     liveUrl: 'https://example.com/northwind',
-    techStack: ['React', 'Tailwind', 'Framer Motion', 'Vite'],
+    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite'],
     summary: 'Authoritative, typography-forward web identity and attorney directory for a boutique corporate law firm.',
     description: `### The Challenge
 Northwind Legal needed to differentiate themselves from traditional corporate law firms with a refined, contemporary brand presence that conveyed gravitas, technical precision, and modern accessibility.
@@ -110,86 +194,14 @@ The firm saw a substantial increase in qualified partner inquiries and corporate
     },
     status: 'published',
     publishedAt: new Date('2024-11-20T09:00:00Z'),
-    coverImage: { url: '/placeholders/project-3.svg', publicId: 'p3', alt: 'Northwind Legal Editorial Webpage' },
+    coverImage: { url: '/placeholders/project-5.svg', publicId: 'p5', alt: 'Northwind Legal Editorial Webpage' },
     gallery: [
-      { url: '/placeholders/project-3.svg', publicId: 'p3-1', alt: 'Practice Area Directory' }
+      { url: '/placeholders/project-5.svg', publicId: 'p5-1', alt: 'Practice Area Directory' }
     ]
   },
   {
-    title: 'FitPulse Coaching App',
-    slug: 'fitpulse-coaching-app',
-    category: 'web-app',
-    featured: false,
-    order: 4,
-    industry: 'Health & Fitness',
-    clientName: 'FitPulse Global',
-    year: 2025,
-    liveUrl: 'https://example.com/fitpulse',
-    techStack: ['React', 'Node.js', 'MongoDB', 'JWT', 'Tailwind CSS'],
-    summary: 'Interactive workout programming, client habit tracking, and biometric reporting platform for elite fitness trainers.',
-    description: `### The Challenge
-Fitness coaches were managing hundreds of clients using disconnected spreadsheets, messaging apps, and PDF logs, causing high client churn and severe operational overhead.
-
-### The Solution
-We built an end-to-end coach and trainee web application with customizable routine templates, video exercise libraries, automated progression calculators, and secure client check-in portals.
-
-### The Outcome
-Coaches reduced weekly administrative workload by over 70%, allowing them to scale their client rosters while maintaining personalized feedback.`,
-    results: [
-      { label: 'Coach Admin Time Saved', value: '14 hrs/wk' },
-      { label: 'Client Retention Rate', value: '94%' }
-    ],
-    testimonial: {
-      quote: 'FitPulse has given my coaching business the platform it needed to scale sustainably to hundreds of athletes.',
-      author: 'Samantha Cruz',
-      role: 'Head of Coaching Operations'
-    },
-    status: 'published',
-    publishedAt: new Date('2025-03-01T14:30:00Z'),
-    coverImage: { url: '/placeholders/project-4.svg', publicId: 'p4', alt: 'FitPulse Coaching Portal' },
-    gallery: [
-      { url: '/placeholders/project-4.svg', publicId: 'p4-1', alt: 'Workout Planner Interface' }
-    ]
-  },
-  {
-    title: 'Verdant Interiors',
-    slug: 'verdant-interiors',
-    category: 'website',
-    featured: false,
-    order: 5,
-    industry: 'Architecture & Design',
-    clientName: 'Verdant Architecture Studio',
-    year: 2024,
-    liveUrl: 'https://example.com/verdant',
-    techStack: ['React', 'Node.js', 'Cloudinary', 'Tailwind CSS'],
-    summary: 'Immersive architectural portfolio showcasing high-end sustainable residential and commercial interior spaces.',
-    description: `### The Challenge
-Verdant Interiors needed an ultra-fluid, visually driven portfolio to exhibit high-resolution architectural photography across varying viewports without sacrificing performance or aesthetic delicacy.
-
-### The Solution
-We implemented dynamic picture grids, responsive image transformations via Cloudinary CDN, full-screen lightbox galleries, and subtle motion transitions that emphasize texture and natural lighting.
-
-### The Outcome
-The studio successfully secured several multi-million dollar residential design commissions directly through inbound portfolio inquiries.`,
-    results: [
-      { label: 'Lighthouse Performance Score', value: '98/100' },
-      { label: 'Inbound Inquiries', value: '+110%' }
-    ],
-    testimonial: {
-      quote: 'The portfolio feels like an interactive art exhibition. It captures the exact texture and quality of our physical spaces.',
-      author: 'Claire Moreau',
-      role: 'Principal Architect'
-    },
-    status: 'published',
-    publishedAt: new Date('2024-09-12T11:00:00Z'),
-    coverImage: { url: '/placeholders/project-5.svg', publicId: 'p5', alt: 'Verdant Interiors Architectural Showcase' },
-    gallery: [
-      { url: '/placeholders/project-5.svg', publicId: 'p5-1', alt: 'Gallery View' }
-    ]
-  },
-  {
-    title: 'Orbit SaaS Landing',
-    slug: 'orbit-saas-landing',
+    title: 'Orbit Developer Tools',
+    slug: 'orbit-developer-tools',
     category: 'branding',
     featured: false,
     order: 6,
@@ -197,10 +209,10 @@ The studio successfully secured several multi-million dollar residential design 
     clientName: 'Orbit Systems Inc.',
     year: 2025,
     liveUrl: 'https://example.com/orbit',
-    techStack: ['React', 'Tailwind', 'Lottie', 'Framer Motion'],
-    summary: 'Interactive product launch landing page and 3D visual identity system for next-generation developer tooling.',
+    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite'],
+    summary: 'Interactive product launch landing page and visual identity system for next-generation cloud developer tooling.',
     description: `### The Challenge
-Orbit was launching their breakthrough cloud infrastructure debugger and required an arresting landing page with interactive terminal previews, feature benchmarks, and immediate dev signups.
+Orbit was launching their cloud infrastructure debugger and required an arresting landing page with interactive terminal previews, feature benchmarks, and immediate dev signups.
 
 ### The Solution
 We built an immersive developer-centric landing experience featuring live code sandboxes, interactive architectural diagrams, and smooth keyframe animations.
@@ -218,7 +230,7 @@ The launch campaign captured over 25,000 developer waitlist signups in the first
     },
     status: 'published',
     publishedAt: new Date('2025-04-18T08:00:00Z'),
-    coverImage: { url: '/placeholders/project-6.svg', publicId: 'p6', alt: 'Orbit SaaS Product Launch Page' },
+    coverImage: { url: '/placeholders/project-6.svg', publicId: 'p6', alt: 'Orbit Developer Tools Landing Page' },
     gallery: [
       { url: '/placeholders/project-6.svg', publicId: 'p6-1', alt: 'Interactive Terminal Preview' }
     ]

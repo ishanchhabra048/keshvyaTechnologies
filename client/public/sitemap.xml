@@ -21,16 +21,28 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://example.com/projects/anyfeast-nutrition-seminar</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-03-15T10:00:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/projects/food-delivery-backend</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-02-10T12:00:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/projects/event-management-platform</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-11-20T09:00:00.000Z</lastmod>
+  </url>
+  <url>
     <loc>https://example.com/projects/lumen-coffee-roasters</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
     <lastmod>2025-01-15T10:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/projects/atlas-fintech-dashboard</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-    <lastmod>2025-02-10T12:00:00.000Z</lastmod>
   </url>
   <url>
     <loc>https://example.com/projects/northwind-legal</loc>
@@ -39,19 +51,7 @@
     <lastmod>2024-11-20T09:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://example.com/projects/fitpulse-coaching-app</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-    <lastmod>2025-03-01T14:30:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/projects/verdant-interiors</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-    <lastmod>2024-09-12T11:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/projects/orbit-saas-landing</loc>
+    <loc>https://example.com/projects/orbit-developer-tools</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
     <lastmod>2025-04-18T08:00:00.000Z</lastmod>
