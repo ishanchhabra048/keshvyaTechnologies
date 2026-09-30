@@ -35,7 +35,20 @@ async function generateSitemap() {
       }
     }
   } catch {
-    console.warn('Could not fetch projects for sitemap, falling back to static routes only.');
+    console.warn('Could not fetch projects from API for sitemap, using fallback project routes.');
+    try {
+      const { fallbackProjects } = await import('../src/content/fallbackProjects.js');
+      fallbackProjects.forEach((p) => {
+        routes.push({
+          url: `/projects/${p.slug}`,
+          priority: '0.7',
+          changefreq: 'monthly',
+          lastmod: p.publishedAt,
+        });
+      });
+    } catch {
+      // ignore
+    }
   }
 
   const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
